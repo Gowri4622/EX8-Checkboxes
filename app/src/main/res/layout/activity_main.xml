@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Choose The Course"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cse" />
+
+    <CheckBox
+        android:id="@+id/cse"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:text="CSE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/eee"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EEE"
+        app:layout_constraintStart_toStartOf="@+id/cse"
+        app:layout_constraintTop_toBottomOf="@+id/cse" />
+
+    <CheckBox
+        android:id="@+id/ece"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECE"
+        app:layout_constraintStart_toStartOf="@+id/eee"
+        app:layout_constraintTop_toBottomOf="@+id/eee" />
+
+    <CheckBox
+        android:id="@+id/mech"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MECH"
+        app:layout_constraintStart_toStartOf="@+id/ece"
+        app:layout_constraintTop_toBottomOf="@+id/ece" />
+
+    <CheckBox
+        android:id="@+id/civil"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CIVIL"
+        app:layout_constraintStart_toStartOf="@+id/mech"
+        app:layout_constraintTop_toBottomOf="@+id/mech" />
+
+    <CheckBox
+        android:id="@+id/aids"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AIDS"
+        app:layout_constraintStart_toStartOf="@+id/civil"
+        app:layout_constraintTop_toBottomOf="@+id/civil" />
+
+    <CheckBox
+        android:id="@+id/aiml"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AIML"
+        app:layout_constraintStart_toStartOf="@+id/aids"
+        app:layout_constraintTop_toBottomOf="@+id/aids" />
+
+    <CheckBox
+        android:id="@+id/eie"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EIE"
+        app:layout_constraintStart_toStartOf="@+id/aiml"
+        app:layout_constraintTop_toBottomOf="@+id/aiml" />
+
+    <CheckBox
+        android:id="@+id/bme"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BME"
+        app:layout_constraintStart_toStartOf="@+id/eie"
+        app:layout_constraintTop_toBottomOf="@+id/eie" />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/black"
+        android:onClick="showSelected"
+        android:text="Display"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/bme"
+        app:layout_constraintTop_toBottomOf="@+id/bme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
